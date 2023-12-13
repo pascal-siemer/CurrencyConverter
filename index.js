@@ -1,17 +1,17 @@
 const currencies = { USD: 'usd', EUR: 'eur' };
 
-const inputCurrencyTypeElement = document.querySelector('#input-currency-type');
+const inputCurrencyElement = document.querySelector('#input-currency-type');
 const inputValueElement = document.querySelector('#input-currency-value');
-const outputCurrencyTypeElement = document.querySelector('#output-currency-type');
+const outputCurrencyElement = document.querySelector('#output-currency-type');
 const outputValueElement = document.querySelector('#output-currency-value');
 
 bindEvents();
 
 function bindEvents() {
     inputValueElement.onkeyup = inputConversionHandler;
-    inputCurrencyTypeElement.onselect = inputConversionHandler;
+    inputCurrencyElement.onchange = inputConversionHandler;
     outputValueElement.onkeyup = outputConversionHandler;
-    outputCurrencyTypeElement.onselect = outputConversionHandler;
+    outputCurrencyElement.onchange = outputConversionHandler;
 }
 
 function inputConversionHandler() {
@@ -27,8 +27,8 @@ function outputConversionHandler() {
 }
 
 function getConversionRate() {
-    let inputCurrency = inputCurrencyTypeElement.value;
-    let outputCurrency = outputCurrencyTypeElement.value;
+    let inputCurrency = inputCurrencyElement.value;
+    let outputCurrency = outputCurrencyElement.value;
 
     if (inputCurrency === outputCurrency) {
         return 1;
