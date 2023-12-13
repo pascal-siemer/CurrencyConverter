@@ -1,0 +1,14 @@
+select {
+    display: inline;
+}
+
+.conversion-container {
+    margin: 20px;
+    padding: 20px;
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px grey;
+
+    width: fit-content;
+}
+
