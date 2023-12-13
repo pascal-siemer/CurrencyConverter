@@ -1,7 +1,7 @@
 const currencies = { USD: 'usd', EUR: 'eur' };
 
 const inputCurrencyTypeElement = document.querySelector('#input-currency-type');
-const inputValueElement = documenty.querySelector('#input-currency-value');
+const inputValueElement = document.querySelector('#input-currency-value');
 const outputCurrencyTypeElement = document.querySelector('#output-currency-type');
 const outputValueElement = document.querySelector('#output-currency-value');
 
